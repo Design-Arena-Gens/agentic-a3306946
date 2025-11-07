@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ultimate AI Global Employee Agent</title>
+  <meta name="description" content="Download ready-to-import n8n workflows to automate dropshipping, affiliate marketing, freelancing, and ebook businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Ultimate AI Global Employee Agent</h1>
+    <p class="subtitle">Launch, operate, and scale multiple automated businesses with importable n8n workflows.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#workflows">Get Workflows</a>
+      <a class="btn" href="#setup">Setup Guide</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="workflows">
+      <h2>Download Workflows (n8n JSON)</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Master Autopilot Orchestrator</h3>
+          <p>Central scheduler + router that triggers all other workflows via Webhook/Execute Workflow. One switch to turn on growth.</p>
+          <a class="btn primary" href="/workflows/autopilot-master-orchestrator.json" download>Download JSON</a>
+        </article>
+        <article class="card">
+          <h3>Dropshipping: Sourcing ? Listing ? Notifications</h3>
+          <p>Fetch feed URLs, dedupe, score winners, publish to Google Sheet/CSV, notify Telegram/Email.</p>
+          <a class="btn primary" href="/workflows/dropshipping-sourcing-and-listing.json" download>Download JSON</a>
+        </article>
+        <article class="card">
+          <h3>Affiliate Content Machine</h3>
+          <p>Aggregate trending topics, generate post templates, schedule to Sheets; optional AI step selectable in n8n.</p>
+          <a class="btn primary" href="/workflows/affiliate-content-machine.json" download>Download JSON</a>
+        </article>
+        <article class="card">
+          <h3>Freelancing Proposal Automation</h3>
+          <p>Webhook-in projects ? proposal generator ? Gmail draft/send ? CRM Sheet log with tracking.</p>
+          <a class="btn primary" href="/workflows/freelancing-proposal-automation.json" download>Download JSON</a>
+        </article>
+        <article class="card">
+          <h3>Ebook Generator & Distribution</h3>
+          <p>Topic intake ? outline ? chapter templates ? compile Markdown ? export to Google Drive/Notion.</p>
+          <a class="btn primary" href="/workflows/ebook-generator.json" download>Download JSON</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="setup">
+      <h2>Setup Guide (Free, No Paid Tools Required)</h2>
+      <ol class="steps">
+        <li><strong>Install n8n (free):</strong> <code>docker run -it --rm -p 5678:5678 n8nio/n8n</code> or use a free VM.</li>
+        <li><strong>Import JSON:</strong> In n8n, go to Workflows ? Import from File and choose the downloaded JSON.</li>
+        <li><strong>Credentials:</strong> Fill placeholders (Google Sheets, Gmail, Telegram, Webhook URLs). All optional AI nodes are disabled by default.</li>
+        <li><strong>Enable:</strong> Toggle each workflow Active. Use the Master Orchestrator to schedule everything via Cron.</li>
+        <li><strong>Customize:</strong> Edit the Set/Function nodes labeled "Config" to add your product feeds, topics, and templates.</li>
+      </ol>
+      <p class="note">Tip: Start with the Master Orchestrator, then gradually enable vertical workflows. Every workflow includes clear labels so you can extend without coding.</p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do these require paid AI keys?</summary>
+        <p>No. All AI steps are optional and disabled by default. The templates work with rules/templates. If you add an AI provider, enable the AI node.</p>
+      </details>
+      <details>
+        <summary>Where do outputs go?</summary>
+        <p>By default: Google Sheets/CSV + optional notifications (Telegram/Email). Configure inside each workflow.</p>
+      </details>
+      <details>
+        <summary>Can I run this on free infra?</summary>
+        <p>Yes. Self-host n8n on a free-tier VM or local machine with Cron. No paid tools required.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Made for high-scale, AI-first solopreneurs. Happy compounding.</p>
+  </footer>
+
+</body>
+</html>
